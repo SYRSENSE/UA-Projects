@@ -1,8 +1,8 @@
-from classes.Persona import *
+from classes.Persona import Persona
 
-class Profesion():
-    def __init__(self,nombre = "",edad = 0,sexo = "", profesion = "", sueldo = 0):
-        super().__init__(nombre,edad,sexo)
+class Profesion(Persona):
+    def __init__(self, nombre="", edad=0, sexo="", profesion ="", sueldo = 0.0):
+        super().__init__(nombre, edad, sexo)
         self.__profesion = profesion
         self.__sueldo = sueldo
     def get_profesion(self):
@@ -13,4 +13,3 @@ class Profesion():
         self.__profesion = cambio
     def set_sueldo(self, cambio):
         self.__sueldo = cambio
-        
