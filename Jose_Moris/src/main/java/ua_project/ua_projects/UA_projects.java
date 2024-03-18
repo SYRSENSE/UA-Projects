@@ -1,6 +1,7 @@
 package ua_project.ua_projects;
 import java.util.Random;
 import java.util.Scanner;
+// Programa realizado por Jose Moris y Paolo Ferreira;
 
 public class UA_projects {
     private static Random random = new Random();
