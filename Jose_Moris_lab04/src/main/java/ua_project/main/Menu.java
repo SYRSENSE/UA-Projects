@@ -82,18 +82,18 @@ public class Menu {
         } while (true);
     }
     public void validarDivision(double num1, double num2){
+        Funciones func = new Funciones((int) num1, (int num2));
         if (num2 != 0) {
-            double resultado = num1 / num2;
-            System.out.println("La division de " + num1 + " entre " + num2 + " es: " + resultado);
+            System.out.println("La division de " + num1 + " entre " + num2 + " es: " + func.divi());
         } else {
             System.out.println("No se puede dividir por cero.");
         }
 
     }
-    public void validarResto(double num1, double num2){  
+    public void validarResto(double num1, double num2){
+        Funciones func = new Funciones((int) num1, (int num2));
             if (num2 != 0) {
-            double resultado = num1 % num2;
-            System.out.println("El resto de " + num1 + " dividido por " + num2 + " es: " + resultado);
+            System.out.println("El resto de " + num1 + " dividido por " + num2 + " es: " + func.resto());
         } else {
             System.out.println("No se puede calcular el resto si el divisor es cero.");
         }
