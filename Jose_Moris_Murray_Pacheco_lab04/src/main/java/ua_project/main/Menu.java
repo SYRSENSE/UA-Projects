@@ -114,7 +114,7 @@ public class Menu {
         Scanner scan = new Scanner(System.in);
         System.out.println("Ingrese palabra a validar: ");
         String palabra = scan.next();
-        palindromo(palabra.toUpperCase().replaceAll("\\s", ""));   
+        palindromo(palabra.toUpperCase());   
     }
 }
 
