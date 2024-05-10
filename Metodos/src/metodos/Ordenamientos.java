@@ -40,6 +40,7 @@ public class Ordenamientos {
         System.out.println("Array ordenado:");
         this.MuestraArray(a);
         System.out.println("Total comparaciones: " + comp);
+        System.out.println("Complejidad O(n^2): " + a.length * a.length);
 }
 
     public void SelectionSort(int[] a) {
@@ -70,6 +71,7 @@ public class Ordenamientos {
         System.out.println("Array ordenado:");
         this.MuestraArray(a);
         System.out.println("Total comparaciones:" + comp);
+        System.out.println("Complejidad O(n^2): " + a.length * a.length);
         } 
         
     public void InsertionSort(int[] a) {
@@ -97,7 +99,8 @@ public class Ordenamientos {
         }
         System.out.println("\nArray ordenado:");
         this.MuestraArray(a);
-        System.out.println("Total comparaciones:" + comp);      
+        System.out.println("Total comparaciones:" + comp);
+        System.out.println("Complejidad O(n^2): " + a.length * a.length);
     }   
 
     public void ShellSort(int[] a) {
@@ -130,8 +133,8 @@ public class Ordenamientos {
 
         System.out.println("\nArray ordenado:");
         this.MuestraArray(a);
-
         System.out.println("Total comparaciones: " + comp);
+        System.out.println("Complejidad O(n(log(n))^2: "+ (int)(Math.pow((a.length*(Math.log10(a.length))),2)));
     }
     private int comparisons_1 = 0;
     public int get_comparisons_1(){
@@ -159,6 +162,7 @@ public class Ordenamientos {
         System.out.println("\nArray ordenado:");
         this.MuestraArray(a);
         System.out.println("Total comparaciones: " + this.get_comparisons_1());
+        System.out.println("Complejidad O(n(log(n)): "+ (int)(a.length*Math.log10(a.length)));
     }
 
     public void merge(int[] arr, int[] left, int[] right) {

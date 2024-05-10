@@ -25,25 +25,20 @@ public class Menu {
         switch (op){
             case 1: 
                 m.BubleSort(array);
-                System.out.println("Complejidad O(n^2)");
                 break;
             case 2:
                 m.InsertionSort(array);
-                System.out.println("Complejidad O(n^2)");
                 break;
             case 3:
                 m.SelectionSort(array);
-                System.out.println("Complejidad O(n^2)");
                 break;
             case 4:
                 m.ShellSort(array);
-                System.out.println("Complejidad O(n(log(n))^2");
                 break;
             case 5:
                 System.out.println("Array Original: ");
                 m.MuestraArray(array);
                 m.mergeSort(array);
-                System.out.println("Complejidad O(n(log(n))");
                 break;
             case 6:
                 System.out.println("Array Original: ");
@@ -52,7 +47,7 @@ public class Menu {
                 System.out.println("\nArray ordenado:");
                 m.MuestraArray(array);
                 System.out.println("Total comparaciones: " + m.get_comparisons_2());
-                System.out.println("Complejidad O(n(log(n))");
+                System.out.println("Complejidad O(n(log(n)): "+ (int)(array.length*Math.log10(array.length)));
                 break;
             default:
                 break;   
